@@ -13,11 +13,6 @@ export default function Services() {
 
   const services = [
     {
-      id: "hidrossemeadura",
-      title: "Hidrossemeadura e Recuperação Ambiental",
-      description: "Excelente cobertura vegetal reduzindo problemas causados por erosão. Técnicas inovadoras para preservação e recuperação de áreas degradadas."
-    },
-    {
       id: "terraplanagem",
       title: "Terraplanagem, Pavimentação e Locação de Máquinas",
       description: "Serviços de alta qualidade para preparação de terrenos e criação de infraestrutura viária com equipamentos modernos e técnicas avançadas."
@@ -26,6 +21,11 @@ export default function Services() {
       id: "mapeamento",
       title: "Mapeamento com Drone e Georeferenciamento",
       description: "Tecnologia de ponta para levantamentos topográficos precisos, agilizando projetos e proporcionando visão completa da área."
+    },
+    {
+      id: "hidrossemeadura",
+      title: "Hidrossemeadura e Recuperação Ambiental",
+      description: "Excelente cobertura vegetal reduzindo problemas causados por erosão. Técnicas inovadoras para preservação e recuperação de áreas degradadas."
     },
   ]
 
@@ -202,66 +202,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div id='hidrossemeadura' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6 bg-neutral-50'>
-          <h2 className='text-3xl md:text-4xl font-bold text-center text-stone-700 mb-2'>
-            Hidrossemeadura
-          </h2>
-          <div className='w-40 h-[3px] bg-red-700 mx-auto mb-2'></div>
-          <p className='text-md text-center font-medium text-stone-700 mb-12'>
-            Processo completo de aplicação para recuperação ambiental
-          </p>
-          
-          <div className='flex w-full h-full justify-center'>
-            <div className='max-w-7xl flex flex-col md:flex-row gap-8 md:gap-6'>
-              {hydroseedingProcess.map((step, index) => (
-                <div 
-                  key={index}
-                  className='group bg-white flex flex-col items-center rounded-sm shadow-md hover:shadow-sm hover:-translate-y-1 transition-all'
-                >
-                  <div className='w-50 h-50 p-5'>
-                    <img
-                      src={step.image}
-                      className='w-full h-full rounded-full shadow-[inset_0_0_0_7px_rgb(193_0_7)]'
-                      alt={step.title}
-                    />
-                  </div>
-                  <div className='transition-all text-center p-4'>
-                    <h4 className='text-xl font-bold text-stone-700 mb-2'>{step.title}</h4>
-                    <p className='text-stone-700 text-md font-medium mb-4'>{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          <div className='flex w-full h-full justify-center pt-16'>
-            <div className='max-w-7xl flex flex-col md:flex-row gap-8 md:gap-6'>
-              <div className='group flex flex-col items-center justify-center rounded-sm transition-all w-full'>
-                <div className='transition-all w-full text-left p-4'>
-                  <h4 className='text-3xl md:text-4xl font-bold text-red-700 mb-4'>Produtos Utilizados</h4>
-                  <ul>
-                    {products.map((product, index) => (
-                      <li key={index} className='mb-2 md:text-md md:text-lg text-stone-700 font-semibold flex gap-2'>
-                        <Check className='text-red-700' />
-                        {product}
-                      </li>
-                    ))}
-                  </ul>
-                </div>  
-              </div>
-
-              <div className='group bg-white flex flex-col items-center rounded-sm shadow-md hover:shadow-sm w-full transition-all overflow-hidden'>
-                <img
-                  src='produtos.png'
-                  className='transition-transform duration-300 hover:scale-104'
-                  alt='Produtos utilizados'
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id='terraplanagem' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6'>
+        <div id='terraplanagem' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6 bg-neutral-50'>
           <h2 className='text-3xl md:text-4xl font-bold text-center text-stone-700 mb-2'>
             Terraplanagem
           </h2>
@@ -357,7 +298,7 @@ export default function Services() {
           </div>
         </div>
         
-        <div id='mapeamento' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6 bg-neutral-50'>
+        <div id='mapeamento' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6'>
           <h2 className='text-3xl md:text-4xl font-bold text-center text-stone-700 mb-2'>
             Mapeamento
           </h2>
@@ -429,6 +370,65 @@ export default function Services() {
             </div>
           </div>
         </div>
+
+        {/* <div id='hidrossemeadura' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6 bg-neutral-50'>
+          <h2 className='text-3xl md:text-4xl font-bold text-center text-stone-700 mb-2'>
+            Hidrossemeadura
+          </h2>
+          <div className='w-40 h-[3px] bg-red-700 mx-auto mb-2'></div>
+          <p className='text-md text-center font-medium text-stone-700 mb-12'>
+            Processo completo de aplicação para recuperação ambiental
+          </p>
+          
+          <div className='flex w-full h-full justify-center'>
+            <div className='max-w-7xl flex flex-col md:flex-row gap-8 md:gap-6'>
+              {hydroseedingProcess.map((step, index) => (
+                <div 
+                  key={index}
+                  className='group bg-white flex flex-col items-center rounded-sm shadow-md hover:shadow-sm hover:-translate-y-1 transition-all'
+                >
+                  <div className='w-50 h-50 p-5'>
+                    <img
+                      src={step.image}
+                      className='w-full h-full rounded-full shadow-[inset_0_0_0_7px_rgb(193_0_7)]'
+                      alt={step.title}
+                    />
+                  </div>
+                  <div className='transition-all text-center p-4'>
+                    <h4 className='text-xl font-bold text-stone-700 mb-2'>{step.title}</h4>
+                    <p className='text-stone-700 text-md font-medium mb-4'>{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className='flex w-full h-full justify-center pt-16'>
+            <div className='max-w-7xl flex flex-col md:flex-row gap-8 md:gap-6'>
+              <div className='group flex flex-col items-center justify-center rounded-sm transition-all w-full'>
+                <div className='transition-all w-full text-left p-4'>
+                  <h4 className='text-3xl md:text-4xl font-bold text-red-700 mb-4'>Produtos Utilizados</h4>
+                  <ul>
+                    {products.map((product, index) => (
+                      <li key={index} className='mb-2 md:text-md md:text-lg text-stone-700 font-semibold flex gap-2'>
+                        <Check className='text-red-700' />
+                        {product}
+                      </li>
+                    ))}
+                  </ul>
+                </div>  
+              </div>
+
+              <div className='group bg-white flex flex-col items-center rounded-sm shadow-md hover:shadow-sm w-full transition-all overflow-hidden'>
+                <img
+                  src='produtos.png'
+                  className='transition-transform duration-300 hover:scale-104'
+                  alt='Produtos utilizados'
+                />
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
     </section>
   )

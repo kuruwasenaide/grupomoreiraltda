@@ -59,10 +59,10 @@ export default function About() {
   
   return (
     <>
-      <section id='about' className='bg-white pt-16 md:pt-20 pb-12 md:pb-16 px-6 flex items-center'>
+      <section id='about' className='bg-neutral-50 pt-16 md:pt-20 pb-12 md:pb-16 px-6 flex items-center'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid md:grid-cols-2 gap-8 sm:gap-12 items-center'>
-            <div className='group bg-white flex flex-col rounded-sm shadow-md hover:shadow-sm w-full h-full transition-all overflow-hidden'>
+            <div className='group flex flex-col rounded-sm shadow-md hover:shadow-sm w-full h-full transition-all overflow-hidden'>
               <div className='w-full aspect-[4/3] overflow-hidden'>
                 <img
                   src='grupomoreira.jpg'

@@ -44,7 +44,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id='projects' className='bg-neutral-50 pt-16 md:pt-20 pb-12 md:pb-16 px-6'>
+    <section id='projects' className='pt-16 md:pt-20 pb-12 md:pb-16 px-6'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-12'>
           <h2 className='text-3xl md:text-4xl text-stone-700 font-bold mb-2 relative inline-block'>
