@@ -76,12 +76,6 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        
-        <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="normal"
-          />
       </div>
     </section>
   );

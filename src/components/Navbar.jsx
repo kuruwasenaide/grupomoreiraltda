@@ -36,11 +36,6 @@ const menuItems = [
     section: 'about'
   },
   {
-    id: 'projects',
-    label: 'Projetos',
-    section: 'projects'
-  },
-  {
     id: 'contact',
     label: 'Contato',
     section: 'contact'
@@ -102,8 +97,8 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className='fixed top-0 w-screen bg-white shadow-sm z-1000 backdrop-blur-sm'>
-        <div className={`transition-[padding] duration-300 max-w-7xl mx-auto px-4 ${scrolled ? 'py-1' : 'py-3'} flex items-center justify-between`}>
+      <nav className={`fixed top-0 w-screen bg-white shadow-sm z-1000 backdrop-blur-sm`}>
+        <div className={`transition-[padding] duration-300 max-w-7xl mx-auto px-4 ${scrolled ? 'py-1' : 'py-2'} flex items-center justify-between`}>
           <a onClick={() => scrollToSection('hero')}><img src='/logo.png' className='h-13 md:h-15 cursor-pointer' alt='Logo' /></a>
           <div className='hidden lg:flex items-center gap-6'>
             {menuItems.map((item) => (

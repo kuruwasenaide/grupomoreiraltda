@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section id='contact' className='bg-white py-20'>
+    <section id='contact' className=' py-20'>
       <div className='max-w-7xl mx-auto px-6'>
         <div className='flex flex-col justify-center mb-16'>
           <h2 className='text-3xl md:text-4xl font-bold text-center text-stone-700 mb-2'>

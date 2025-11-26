@@ -218,7 +218,7 @@ export default function Services() {
                 return (
                   <div 
                     key={index}
-                    className='group bg-white flex flex-col items-center rounded-sm shadow-md hover:shadow-sm hover:-translate-y-1 transition-all flex-shrink-0 snap-center w-[90%] md:w-[45%] lg:w-auto lg:flex-1'
+                    className='group flex flex-col items-center rounded-sm shadow-md hover:shadow-sm hover:-translate-y-1 transition-all flex-shrink-0 snap-center w-[90%] md:w-[45%] lg:w-auto lg:flex-1'
                   >
                     <div className='w-20 h-20 mt-4 bg-red-700 rounded-full'>
                       <Icon className='w-full h-full p-5 text-white transition-transform duration-500 group-hover:rotate-y-180' />
@@ -235,7 +235,7 @@ export default function Services() {
           
           <div className='flex w-full h-full justify-center pt-16'>
             <div className='max-w-7xl flex flex-col md:flex-row gap-8 md:gap-6'>
-              <div className='bg-white flex flex-col items-center rounded-sm shadow-md w-full transition-all overflow-hidden'>
+              <div className='flex flex-col items-center rounded-sm shadow-md w-full transition-all overflow-hidden'>
                 <h3 className='p-2 text-3xl font-bold text-center text-red-700 mb-2'>
                   Frota de Equipamentos
                 </h3>
@@ -268,7 +268,7 @@ export default function Services() {
 
           <div className='flex w-full h-full justify-center pt-16'>
             <div className='max-w-7xl flex flex-col md:flex-row gap-8 md:gap-6 w-full'>
-              <div className='bg-white flex flex-col items-center rounded-sm shadow-md w-full transition-all overflow-hidden'>
+              <div className='flex flex-col items-center rounded-sm shadow-md w-full transition-all overflow-hidden'>
                 <h3 className='p-2 text-3xl font-bold text-center text-red-700 mb-2'>
                   Nossos Diferenciais
                 </h3>
@@ -279,7 +279,7 @@ export default function Services() {
                       return (
                         <div 
                           key={index}
-                          className='group min-w-[90%] md:min-w-[45%] lg:min-w-auto bg-white flex flex-col items-center rounded-sm shadow-md hover:shadow-sm hover:-translate-y-1 transition-all snap-center'
+                          className='group min-w-[90%] md:min-w-[45%] lg:min-w-auto flex flex-col items-center rounded-sm shadow-md hover:shadow-sm hover:-translate-y-1 transition-all snap-center'
                         >
                           <div className='w-20 h-20 mt-3 bg-red-50 group-hover:bg-red-700 rounded-full transition-colors duration-300 flex items-center justify-center'>
                             <Icon className='w-12 h-12 text-red-700 transition-colors duration-300 group-hover:text-white' />
@@ -371,7 +371,7 @@ export default function Services() {
           </div>
         </div>
 
-        {/* <div id='hidrossemeadura' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6 bg-neutral-50'>
+        <div id='hidrossemeadura' className='flex flex-col justify-center pt-16 md:pt-20 pb-12 md:pb-16 px-6 bg-neutral-50'>
           <h2 className='text-3xl md:text-4xl font-bold text-center text-stone-700 mb-2'>
             Hidrossemeadura
           </h2>
@@ -428,7 +428,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )

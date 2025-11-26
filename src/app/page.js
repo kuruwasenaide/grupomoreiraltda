@@ -24,7 +24,6 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
-        <Projects />
         <div className='pt-10 md:pt-12 pb-8 md:pb-10 px-3 flex bg-red-700 items-center'>
           <div className='max-w-6xl mx-auto w-full'>
             <h2 className='text-3xl md:text-4xl font-bold text-center text-white mb-3'>Pronto para transformar seu projeto em realidade?</h2>
